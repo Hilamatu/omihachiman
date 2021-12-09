@@ -9,6 +9,105 @@
     WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="" alt="omihachiman commerce logo">
+        <div class="moto">
+            A great place to live, visit and come back to. This is Omihachiman!
+        </div>
+        <div class="hero-image">
+            <img class="hero-image" srce="" alt="Hachimanbori at night">
+        </div>
+        <section id="weather-alert" class="on">
+            <h3>Weather alert!</h3>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="##">Home</a></li>
+            <li><a href="##">City</a></li>
+            <li><a href="##">Join</a></li>
+            <li><a href="##">Directory</a></li>
+            <li><a href="##">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="events">
+            <h3>Upcoming Events!</h3>
+            <ul>
+                <li>Sagicho Fire Festival - March 13-14, 2022 </li>
+                <img src="" alt="Fire Festival">
+                <a href="https://www.sagicho.net">Official Webpage</a>
+                <li>Christmas Theater - December 18, 2021</li>
+                <img src="" alt="Christmas Theater Poster">
+                <a href="https://www.city.omihachiman.lg.jp">Prefecture Official Webpage</a>
+            </ul>
+        </section>
+        <section class="weather">
+            <h3>Weather information</h3>
+            <div class="current">
+                <h3>Weather Summary</h3>
+                    <p><strong>Currently: </strong><span id="current"></span></p>
+                    <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
+                    <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
+            </div>
+            <div class="forecast">
+                <h3>5 days forecast</h3>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday1"></span>
+                        <img id="img1" src="/images/placeholder.png" alt="placeholder for weather information">
+                        <span class="data" id="data1"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday2"></span>
+                        <img id="img2" src="/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data2"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday3"></span>
+                        <img id="img3" src="/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advertisement">
+            <h3>advertisement:</h3>
+            <div class="partik">
+                <p>Do you like Indian food? Would you like to try Indian food?
+                    The best restaurant to go! <br><strong>Cheap, Delicious, Well-attended, this is Partik!!</strong>
+                </p>
+                <img src="" alt="Partik indian restaurant">
+                <a href="https://hitosara.com/0006046354/">Make a reservation!!</a>
+            </div>
+            <div　class="hachiman-bori">
+                <p>Do you like the Japanses culture? Do you like the nature?
+                    Would like to make a tour in a living museum? <br>
+                    You can have this in Hachiman Bori! A canal that was a mainstay in regional economics and 
+                    transportation until the start of the Showa period (1926 - 1989). White-walled storehouses 
+                    and old houses stand along the canal, clearly imparting the atmosphere of the area at its peak.
+                    
+                </p>
+                <img src="" alt="Hachiman Bori">
+                <a href="https://www.omi8.com/omihachiman/local-history/hachimanbori/">Visit the site!!</a>
+            </div>
+            <div class="omisampa">
+                <p>Feel as you were in Brazil eating brazilian food in a brazilian environment!</p>
+                <img src="" alt="omisampa restaurant">
+                <a href="https://www.facebook.com/profile.php?id=100074888106894">Find them on facebook</a>
+            </div>
+        </section>
+        <section class="purpose">
+            <h3>Our purpose and goals</h3>
+            <p>The Omihachiman Chamber of Commerce was organized with the intent to promote the city and the local 
+                business by presenting the places you can visit in Omihachiman, the history of the city, its 
+                importance to Shiga province and, of course, the local business of our city. <br>
+                Our goal is to increase the number of visitors to our city and consequently promote the local 
+                business increasing their profits and attract more investors and new business to our city.
+                </p>
+
+        </section>
+    </main>
 </body>
 </html>
