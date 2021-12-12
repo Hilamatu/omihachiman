@@ -7,21 +7,35 @@
     <title>Omihachiman Chamber Of Commerce</title>
     <meta name="description" content="Final project for Hyrum Hilamatu in 
     WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <script src="js/home.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/small.css">
+    <link rel="stylesheet" href="/css/medium.css">
+    <link rel="stylesheet" href="/css/large.css">
+    <script defer src="js/home.js"></script>
 </head>
 <body>
     <header>
         <img class="logo" src="" alt="omihachiman commerce logo">
-        <div class="moto">
-            A great place to live, visit and come back to. This is Omihachiman!
+        <div class="motto">
+            <h1>Omihachiman Chamber Of Commerce</h1>
+            <p>A great place to live, visit and come back to. This is Omihachiman!</p>
         </div>
-        <div class="hero-image">
-            <img class="hero-image" srce="" alt="Hachimanbori at night">
-        </div>
-        <section id="weather-alert" class="on">
-            <h3>Weather alert!</h3>
-        </section>
     </header>
+    <div class="hero">
+        <picture>
+            <source media="(min-width:64rem)" srcset="/images/large/hachimanbori-large.jpeg">
+            <source media="(min-width:35em)" srcset="/images/medium/hachimanbori-medium.jpeg">
+            <source media="(max-width:560px)" srcset="/images/small/hachimanbori-small.jpeg">
+            <img class="hero-image" src="/images/large/hachimanbori-large.jpeg" alt="Hachimanbori at night">
+        </picture> 
+        <section id="weather-alert" class="on">
+            <h2>Weather alert!</h2>
+            <h3 id="alert">Snow Tempest</h3>
+            <h4>From<span id="start"></span> to <span id="end"></span></h4>
+            <p id="description"></p>            
+        </section>      
+    </div>
+    
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#8801; Menu</button>
         <ul id="primaryNav" class="hide">
@@ -35,24 +49,26 @@
     <main>
         <section class="events">
             <h3>Upcoming Events!</h3>
-            <ul>
-                <li>Sagicho Fire Festival - March 13-14, 2022 </li>
-                <img src="" alt="Fire Festival">
-                <a href="https://www.sagicho.net">Official Webpage</a>
-                <li>Christmas Theater - December 18, 2021</li>
-                <img src="" alt="Christmas Theater Poster">
-                <a href="https://www.city.omihachiman.lg.jp">Prefecture Official Webpage</a>
-            </ul>
+            <h4>Sagicho Fire Festival</h4>
+            <p>March, 13-14, 2022</p>
+            <picture>
+                <source media="(min-width:64rem)" srcset="/images/large/sagicholarge.jpeg">
+                <source media="(min-width:35em)" srcset="/images/medium/sagichomedium.jpeg">
+                <source media="(max-width:560px)" srcset="/images/small/sagichosmall.jpeg">
+                <img class="hero-image" src="/images/large/sagicholarge.jpeg" alt="Sagicho festival">
+            </picture> 
+            <a href="https://www.sagicho.net">Official Webpage</a>
         </section>
         <section class="weather">
-            <h3>Weather information</h3>
+            <h2>Weather information</h2>
             <div class="current">
                 <h3>Weather Summary</h3>
                     <p><strong>Currently: </strong><span id="current"></span></p>
                     <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
                     <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
             </div>
-            <div class="forecast">
+        </section>
+        <section class="forecast">
                 <h3>3 days forecast</h3>
                 <div class="flex">
                     <div class="flex-col">
@@ -129,5 +145,10 @@
             <p class="lastmodified">Last updated: <span id="lastmodified"></span></p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Yuji Boku']}})
+         WebFont.load({google: {families: ['Lobster']}})
+    </script>
 </body>
 </html>

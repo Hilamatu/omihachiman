@@ -1,0 +1,192 @@
+body {
+    background-color: #355070;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lobster";
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    display: flex
+}
+
+.logo{
+    width: 130px;
+    height: 135px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.motto {
+    color: white;
+    margin-top: -40px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(218, 216, 216);
+
+}
+
+nav {
+    background-color: #1f3044;
+    font-family: Verdana, helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: #B56576;
+    border-top: 2px solid rgba(0, 0,0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0,0, 0.4);
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0,0, 0.2);
+    color: white;
+}
+
+nav ul.hide{
+    display: none;
+}
+
+.hero picture img{
+    max-width: 100%;
+}
+
+div.hero{
+    position: relative;
+}
+
+#weather-alert {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    background: rgba(177,177,177, 0.8);
+    padding: 6px;
+    font-size: 10px;
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
+}
+
+.weathersummary h3 {
+    font-size: 10px;
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+main section.events {
+    margin: 20px;
+    padding: 2px 0px 8px;
+    background: #EAAC8B;
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
+}
+
+main section.events h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+main section.events h4 {
+    font-size: 1.5rem;
+}
+
+main section.events p {
+    font-size: 15px;
+}
+
+main section.events h4, p, a {
+    margin: 20px;
+}
+
+main section.events img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+main section.weather {
+    margin: 20px;
+    padding: 8px;
+    background: #EAAC8B;
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
+}
+
+main section.forecast {
+    margin: 20px;
+    padding: 8px;
+    background: #EAAC8B;
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
+}
+
+.forecast {
+    display: block;
+}
+.flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+    border-right: 1px solid #333;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    background-color: rgb(177, 177, 177);
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+}
+
+.flex {
+    border-right: 1px solid #333;
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+
+.forecast img {
+    width: 50px;
+    border-radius: 100px;
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.col-head {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
