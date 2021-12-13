@@ -7,7 +7,7 @@
     <title>Omihachiman Chamber Of Commerce</title>
     <meta name="description" content="Final project for Hyrum Hilamatu in 
     WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/small.css">
     <link rel="stylesheet" href="/css/medium.css">
     <link rel="stylesheet" href="/css/large.css">
@@ -67,8 +67,7 @@
                     <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
                     <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
             </div>
-        </section>
-        <section class="forecast">
+            <div class="forecast">
                 <h3>3 days forecast</h3>
                 <div class="flex">
                     <div class="flex-col">
@@ -90,15 +89,17 @@
             </div>
         </section>
         <section class="advertisement">
-            <h3>advertisement:</h3>
+            <h3>Know our local business</h3>
             <div class="partik">
+                <h3>Partik</h3>
                 <p>Do you like Indian food? Would you like to try Indian food?
-                    The best restaurant to go! <br><strong>Cheap, Delicious, Well-attended, this is Partik!!</strong>
+                    <br><strong>Cheap, Delicious, Well-attended,<br>This is Partik!!</strong>
                 </p>
-                <img src="" alt="Partik indian restaurant">
+                <img src="/images/cheese.jpeg" alt="cheese nan">
                 <a href="https://hitosara.com/0006046354/">Make a reservation!!</a>
             </div>
-            <div　class="hachiman-bori">
+            <div class="hachimanbori">
+                <h3>Hachiman-Bori</h3>
                 <p>Do you like the Japanses culture? Do you like the nature?
                     Would like to make a tour in a living museum? <br>
                     You can have this in Hachiman Bori! A canal that was a mainstay in regional economics and 
@@ -106,17 +107,18 @@
                     and old houses stand along the canal, clearly imparting the atmosphere of the area at its peak.
                     
                 </p>
-                <img src="" alt="Hachiman Bori">
+                <img src="/images/hachiman.jpeg" alt="Hachiman Bori">
                 <a href="https://www.omi8.com/omihachiman/local-history/hachimanbori/">Visit the site!!</a>
             </div>
             <div class="omisampa">
+                <h3>Omisampa</h3>
                 <p>Feel as you were in Brazil eating brazilian food in a brazilian environment!</p>
-                <img src="" alt="omisampa restaurant">
+                <img src="/images/omisampa.jpeg" alt="omisampa restaurant">
                 <a href="https://www.facebook.com/profile.php?id=100074888106894">Find them on facebook</a>
             </div>
         </section>
         <section class="purpose">
-            <h3>Our purpose and goals</h3>
+            <h2>Our purpose and goals</h2>
             <p>The Omihachiman Chamber of Commerce was organized with the intent to promote the city and the local 
                 business by presenting the places you can visit in Omihachiman, the history of the city, its 
                 importance to Shiga province and, of course, the local business of our city. <br>
@@ -127,20 +129,21 @@
     </main>
     <footer>
         <section class="contact-information">
-            <img class="map" src="/images/map.png" alt="Commerce Map">
             <div class="address">
                 <h3>Omihachiman Chamber of Commerce</h3>
-                <span><img src="" alt="gps icon">Omihachiman,<br>Anyoji-cho, 4-35</span>
+                <img class="map" src="/images/map.png" alt="Commerce Map">
+                <p>Shiga-ken,<br>Omihachiman,<br>Anyoji-cho, 4-35<br>
+                Tel: +81 90-1278-3684</p>
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
-                    <img src="" alt="facebook icon"></a>
+                    <img src="/images/facebook.png" alt="facebook icon"></a>
                 <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
-                    <img class="mail" src="" alt="gmail icon"></a>
+                    <img class="mail" src="/images/gmail.png" alt="gmail icon"></a>
             </div>
         </section>            
         <div class="footer-bar">
-            <p class="source">Weather Data Source: <a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></p>
+            <p class="source">Weather Data Source:<span><a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></span></p>
             <p>&copy; <span id="copyrightyear"></span> Omihachiman Chamber of Commerce - Hyrum Hilamatu - Japan - BYU online learning</p>
             <p class="lastmodified">Last updated: <span id="lastmodified"></span></p>
         </div>
