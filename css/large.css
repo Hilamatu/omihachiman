@@ -1,0 +1,26 @@
+@media only screen and (min-width: 64rem) {
+
+    div.large-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section.advertisement {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section.advertisement h3{
+        grid-column: 1/4;
+    }
+    div.partik {
+        grid-column: 1;
+    }
+
+    div.hachimanbori {
+        grid-column: 2;
+    }
+
+    div.omisampa {
+        grid-column: 3;
+    }
+}

@@ -72,7 +72,7 @@ nav ul.hide{
 }
 
 .hero picture img{
-    max-width: 100%;
+    width: 100%;
 }
 
 div.hero{
@@ -113,30 +113,39 @@ main section.events h4 {
     font-size: 1.5rem;
 }
 
-main section.events p {
+section.events p {
     font-size: 15px;
 }
 
-main section.events h4, p, a {
+section.events h4, p, a {
     margin: 20px;
 }
 
-main section.events img{
+section.events img{
     display: block;
     margin: auto;
     padding: 10px;
 }
 
-main section.weather {
+section.events picture.fire {
+    display: none;
+}
+
+div.weather {
     margin: 20px;
     padding: 8px;
     background: #EAAC8B;
 }
-main section.weather h2 {
+section.weather h2 {
     text-align: center;
     font-size: 2rem;
 }
 
+div.forecast {
+    margin: 20px;
+    padding: 8px;
+    background: #EAAC8B;
+}
 .forecast {
     display: block;
 }
@@ -257,6 +266,30 @@ main section.purpose p {
     font-size: 18px;
 }
 
+.purpose a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.purpose a:visited{
+    color: black;
+}
+
+section.advertisement div img[data-src]{
+    filter: blur(0.2em);
+}
+
+section.advertisement div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+} 
+
 footer section.contact-information {
     background-color: #6D597A;
 }
@@ -299,27 +332,5 @@ div.address p {
     font-style: italic;
 }
 
-.purpose a {
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    color: black;
-    font-size: 25px;
-    background-color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.purpose a:visited{
-    color: black;
-}
-
-section.advertisement div img[data-src]{
-    filter: blur(0.2em);
-}
-
-section.advertisement div img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-}   
+  
 

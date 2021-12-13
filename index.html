@@ -47,47 +47,56 @@
         </ul>
     </nav>
     <main>
-        <section class="events">
-            <h3>Upcoming Events!</h3>
-            <h4>Sagicho Fire Festival</h4>
-            <p>March, 13-14, 2022</p>
-            <picture>
-                <source media="(min-width:64rem)" srcset="/images/large/sagicholarge.jpeg">
-                <source media="(min-width:35em)" srcset="/images/medium/sagichomedium.jpeg">
-                <source media="(max-width:560px)" srcset="/images/small/sagichosmall.jpeg">
-                <img class="hero-image" src="/images/large/sagicholarge.jpeg" alt="Sagicho festival">
-            </picture> 
-            <a href="https://www.sagicho.net">Official Webpage</a>
-        </section>
-        <section class="weather">
-            <h2>Weather information</h2>
-            <div class="current">
-                <h3>Weather Summary</h3>
-                    <p><strong>Currently: </strong><span id="current"></span></p>
-                    <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
-                    <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
-            </div>
-            <div class="forecast">
-                <h3>3 days forecast</h3>
-                <div class="flex">
-                    <div class="flex-col">
-                        <span class="col-head" id="weekday1"></span>
-                        <img id="img1" src="/images/placeholder.png" alt="placeholder for weather information">
-                        <span class="data" id="data1"></span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="weekday2"></span>
-                        <img id="img2" src="/images/placeholder.png" alt="placeholder for weather information" >
-                        <span class="data" id="data2"></span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="weekday3"></span>
-                        <img id="img3" src="/images/placeholder.png" alt="placeholder for weather information" >
-                        <span class="data" id="data3"></span>
+        <div class="large-grid">
+            <section class="events">
+                <h3>Upcoming Events!</h3>
+                <h4>Sagicho Fire Festival</h4>
+                <p>March, 13-14, 2022</p>
+                <picture>
+                    <source media="(min-width:64rem)" srcset="/images/large/sagicholarge.jpeg">
+                    <source media="(min-width:35em)" srcset="/images/medium/sagichomedium.jpeg">
+                    <source media="(max-width:560px)" srcset="/images/small/sagichosmall.jpeg">
+                    <img class="hero-image" src="/images/large/sagicholarge.jpeg" alt="Sagicho festival">
+                </picture> 
+                <picture class="fire">
+                    <source media="(min-width:64rem)" srcset="/images/sagicho-fire.jpeg">
+                    <source media="(min-width:35em)" srcset="/images/sagicho-fire.jpeg">
+                    <img class="hero-image" src="/images/sagicho-fire.jpeg" alt="Sagicho festival">
+                </picture>
+                <a href="https://www.sagicho.net">Official Webpage</a>
+            </section>
+            <section class="weather-information">
+                <div class="weather">
+                    <h2>Weather information</h2>
+                    <div class="current">
+                        <h3>Weather Summary</h3>
+                            <p><strong>Currently: </strong><span id="current"></span></p>
+                            <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
+                            <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="forecast">
+                    <h3>3 days forecast</h3>
+                    <div class="flex">
+                        <div class="flex-col">
+                            <span class="col-head" id="weekday1"></span>
+                            <img id="img1" src="/images/placeholder.png" alt="placeholder for weather information">
+                            <span class="data" id="data1"></span>
+                        </div>
+                        <div class="flex-col">
+                            <span class="col-head" id="weekday2"></span>
+                            <img id="img2" src="/images/placeholder.png" alt="placeholder for weather information" >
+                            <span class="data" id="data2"></span>
+                        </div>
+                        <div class="flex-col">
+                            <span class="col-head" id="weekday3"></span>
+                            <img id="img3" src="/images/placeholder.png" alt="placeholder for weather information" >
+                            <span class="data" id="data3"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section class="advertisement">
             <h3>Know our local business</h3>
             <div class="partik">
