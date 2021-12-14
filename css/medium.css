@@ -107,7 +107,19 @@
     main.join{
         margin: 20px auto
     }
+/* -------------------------------Contact CSS------------------------------------ */
 
+    main.contact section.directors{
+        float: right;
+        margin-right: 20px;
+
+    } 
+
+    iframe {
+        display: block;
+        width: 50%;
+        margin-right: 15px;
+    }
 }
 
 

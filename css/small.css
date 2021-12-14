@@ -439,7 +439,7 @@ form legend {
     font-size: 18px;
 }
 
-form label.top, form div {
+form label.top, form div, label.comments {
     display: block;
     padding-top: 1rem;
     color: black;
@@ -449,7 +449,7 @@ form label.top, form div {
 form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
-    font-size: 1rem;
+    font-size: 18px;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
@@ -463,6 +463,7 @@ form label.sbs{
     display: block;
     padding: .75rem 0;
     color: black;
+    font-size: 18px;
 }
 
 form input.submitBtn {
@@ -472,9 +473,10 @@ form input.submitBtn {
     color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 20px 0 2rem 2%;
+    margin: 20px 0 2rem 20px;
     width: 96%;
-    max-width: 20rem
+    max-width: 20rem;
+    font-size: 18px;
 }
 
 form input.submitBtn:hover{
@@ -498,10 +500,10 @@ label.comments textarea {
     border-radius: 4px;
     padding: .75rem;
     color: black;
-    width: 80%;
+    width: 90%;
     background-color: rgba(0, 0, 0,0.1);
 }
-/* ---------------------------------Thanks CSS--------------------------------- */
+/* ---------------------------------Welcome CSS--------------------------------- */
 main.thanks {
     text-align: center;
     font-size: 30px;
@@ -510,3 +512,32 @@ main.thanks {
 main.thanks button {
     margin-bottom: 20px;
 }
+
+/* -------------------------------Contact CSS------------------------------------ */
+
+main.contact section{
+    background-color: #EAAC8B;
+    margin: 20px auto 20px;
+    padding: 10px;
+    max-width: 400px
+}
+
+main.contact section h2 {
+    padding: 20px;
+}
+
+iframe {
+    display: none;
+}
+
+section.directors {
+    background-color: #EAAC8B;
+    font-size: 18px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
