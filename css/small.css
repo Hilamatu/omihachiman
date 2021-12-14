@@ -334,7 +334,7 @@ div.address p {
 
 /* --------------------------------------City CSS---------------------------- */
 
-main section.demography h3{
+main section.demography h2{
     text-align: center;
     font-size: 30px;
 }
@@ -374,7 +374,6 @@ tbody tr:nth-child(1) td:nth-child(1){
 
 tfoot {
     font-size: .90rem;
-    background-color: var(--back2);
 }
 
 
@@ -382,3 +381,40 @@ tbody tr:nth-child(odd) {
 	background-color: #876d99;
 }
 
+section.history {
+    padding: 10px;
+    margin: 20px;
+    background-color: #EAAC8B;
+}
+section.history h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+section.places {
+    padding: 10px;
+    margin: 20px;
+    background-color: #EAAC8B;
+}
+
+section.places h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section.places div.azuchi {
+    padding: 10px;
+    background-color: #E56B6F;
+}
+
+section.places div.azuchi h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+section.places div.azuchi img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
