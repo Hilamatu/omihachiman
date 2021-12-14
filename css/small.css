@@ -418,3 +418,95 @@ section.places div.azuchi img{
     width: 90%;
     padding: 10px;
 }
+/* ----------------------------------Join CSS------------------------------------- */
+main.join{
+    padding:10px;
+    background-color: #EAAC8B;
+    margin: 20px;
+    max-width: 400px;
+}
+form fieldset {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+form legend {
+    font-family: 'Lobster';
+    color:black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 18px;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: 18px;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 15rem;
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: black;
+}
+
+form input.submitBtn {
+    font-family: 'Lobster';
+    border: none;
+    background-color: #B56576;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 20px 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem
+}
+
+form input.submitBtn:hover{
+    box-shadow: 0 0 50px #333;
+    cursor: pointer;
+}
+
+input:required:invalid {
+    background-color: #fdd;
+    color: #000;
+}
+input:required:valid {
+    background-color: #dfd;
+    color: #000;
+}
+
+label.comments textarea {
+    display: block;
+    font-size: 18px;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 80%;
+    background-color: rgba(0, 0, 0,0.1);
+}
+/* ---------------------------------Thanks CSS--------------------------------- */
+main.thanks {
+    text-align: center;
+    font-size: 30px;
+}
+
+main.thanks button {
+    margin-bottom: 20px;
+}
