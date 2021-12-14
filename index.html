@@ -7,11 +7,11 @@
     <title>Omihachiman Chamber Of Commerce</title>
     <meta name="description" content="Final project for Hyrum Hilamatu in 
     WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/small.css">
-    <link rel="stylesheet" href="/css/medium.css">
-    <link rel="stylesheet" href="/css/large.css">
-    <script defer src="js/home.js"></script>
+    <link rel="stylesheet" href="../omihachiman/css/normalize.css">
+    <link rel="stylesheet" href="../omihachiman/css/small.css">
+    <link rel="stylesheet" href="../omihachiman/css/medium.css">
+    <link rel="stylesheet" href="../omihachiman/css/large.css">
+    <script defer src="../omihachiman/js/home.js"></script>
 </head>
 <body>
     <header>
@@ -23,10 +23,10 @@
     </header>
     <div class="hero">
         <picture>
-            <source media="(min-width:64rem)" srcset="/images/large/hachimanbori-large.jpeg">
-            <source media="(min-width:35em)" srcset="/images/medium/hachimanbori-medium.jpeg">
-            <source media="(max-width:560px)" srcset="/images/small/hachimanbori-small.jpeg">
-            <img class="hero-image" src="/images/large/hachimanbori-large.jpeg" alt="Hachimanbori at night">
+            <source media="(min-width:64rem)" srcset="../omihachiman/images/large/hachimanbori-large.jpeg">
+            <source media="(min-width:35em)" srcset="../omihachiman/images/medium/hachimanbori-medium.jpeg">
+            <source media="(max-width:560px)" srcset="../omihachiman/images/small/hachimanbori-small.jpeg">
+            <img class="hero-image" src="../omihachiman/images/large/hachimanbori-large.jpeg" alt="Hachimanbori at night">
         </picture> 
         <section id="weather-alert" class="off">
             <h2>Weather alert!</h2>
@@ -47,56 +47,54 @@
         </ul>
     </nav>
     <main>
-        <div class="large-grid">
-            <section class="events">
-                <h3>Upcoming Events!</h3>
-                <h4>Sagicho Fire Festival</h4>
-                <p>March, 13-14, 2022</p>
-                <picture>
-                    <source media="(min-width:64rem)" srcset="/images/large/sagicholarge.jpeg">
-                    <source media="(min-width:35em)" srcset="/images/medium/sagichomedium.jpeg">
-                    <source media="(max-width:560px)" srcset="/images/small/sagichosmall.jpeg">
-                    <img class="hero-image" src="/images/large/sagicholarge.jpeg" alt="Sagicho festival">
-                </picture> 
-                <picture class="fire">
-                    <source media="(min-width:64rem)" srcset="/images/sagicho-fire.jpeg">
-                    <source media="(min-width:35em)" srcset="/images/sagicho-fire.jpeg">
-                    <img class="hero-image" src="/images/sagicho-fire.jpeg" alt="Sagicho festival">
-                </picture>
-                <a href="https://www.sagicho.net">Official Webpage</a>
-            </section>
-            <section class="weather-information">
-                <div class="weather">
-                    <h2>Weather information</h2>
-                    <div class="current">
-                        <h3>Weather Summary</h3>
-                            <p><strong>Currently: </strong><span id="current"></span></p>
-                            <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
-                            <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
+        <section class="events">
+            <h3>Upcoming Events!</h3>
+            <h4>Sagicho Fire Festival</h4>
+            <p>March, 13-14, 2022</p>
+            <picture>
+                <source media="(min-width:64rem)" srcset="../omihachiman/images/large/sagicholarge.jpeg">
+                <source media="(min-width:35em)" srcset="../omihachiman/images/medium/sagichomedium.jpeg">
+                <source media="(max-width:560px)" srcset="../omihachiman/images/small/sagichosmall.jpeg">
+                <img class="hero-image" src="../omihachiman/images/large/sagicholarge.jpeg" alt="Sagicho festival">
+            </picture> 
+            <picture class="fire">
+                <source media="(min-width:64rem)" srcset="../omihachiman/images/sagicho-fire.jpeg">
+                <source media="(min-width:35em)" srcset="../omihachiman/images/sagicho-fire.jpeg">
+                <img class="hero-image" src="../omihachiman/images/sagicho-fire.jpeg" alt="Sagicho festival">
+            </picture>
+            <a href="https://www.sagicho.net">Official Webpage</a>
+        </section>
+        <section class="weather-information">
+            <div class="weather">
+                <h2>Weather information</h2>
+                <div class="current">
+                    <h3>Weather Summary</h3>
+                        <p><strong>Currently: </strong><span id="current"></span></p>
+                        <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
+                        <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h3>3 days forecast</h3>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday1"></span>
+                        <img id="img1" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information">
+                        <span class="data" id="data1"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday2"></span>
+                        <img id="img2" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data2"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday3"></span>
+                        <img id="img3" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data3"></span>
                     </div>
                 </div>
-                <div class="forecast">
-                    <h3>3 days forecast</h3>
-                    <div class="flex">
-                        <div class="flex-col">
-                            <span class="col-head" id="weekday1"></span>
-                            <img id="img1" src="/images/placeholder.png" alt="placeholder for weather information">
-                            <span class="data" id="data1"></span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="col-head" id="weekday2"></span>
-                            <img id="img2" src="/images/placeholder.png" alt="placeholder for weather information" >
-                            <span class="data" id="data2"></span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="col-head" id="weekday3"></span>
-                            <img id="img3" src="/images/placeholder.png" alt="placeholder for weather information" >
-                            <span class="data" id="data3"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="advertisement">
             <h3>Know our local business</h3>
             <div class="partik">
@@ -104,7 +102,7 @@
                 <p>Do you like Indian food? Would you like to try Indian food?
                     <br><strong>Cheap, Delicious, Well-attended,<br>This is Partik!!</strong>
                 </p>
-                <img src ="/images/placeholder.png" data-src="/images/cheese.jpeg" alt="cheese nan">
+                <img src ="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/cheese.jpeg" alt="cheese nan">
                 <a href="https://hitosara.com/0006046354/">Make a reservation!!</a>
             </div>
             <div class="hachimanbori">
@@ -116,13 +114,13 @@
                     and old houses stand along the canal, clearly imparting the atmosphere of the area at its peak.
                     
                 </p>
-                <img src="/images/placeholder.png" data-src="/images/hachiman.jpeg" alt="Hachiman Bori">
+                <img src="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/hachiman.jpeg" alt="Hachiman Bori">
                 <a href="https://www.omi8.com/omihachiman/local-history/hachimanbori/">Visit the site!!</a>
             </div>
             <div class="omisampa">
                 <h3>Omisampa</h3>
                 <p>Feel as you were in Brazil eating brazilian food in a brazilian environment!</p>
-                <img src="/images/placeholder.png" data-src="/images/omisampa.jpeg" alt="omisampa restaurant">
+                <img src="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/omisampa.jpeg" alt="omisampa restaurant">
                 <a href="https://www.facebook.com/profile.php?id=100074888106894">Find them on facebook</a>
             </div>
         </section>
@@ -142,15 +140,15 @@
         <section class="contact-information">
             <div class="address">
                 <h3>Omihachiman Chamber of Commerce</h3>
-                <img class="map" src="/images/map.png" alt="Commerce Map">
+                <img class="map" src="../omihachiman/images/map.png" alt="Commerce Map">
                 <p>Shiga-ken,<br>Omihachiman,<br>Anyoji-cho, 4-35<br>
                 Tel: +81 90-1278-3684</p>
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
-                    <img src="/images/facebook.png" alt="facebook icon"></a>
+                    <img src="../omihachiman/images/facebook.png" alt="facebook icon"></a>
                 <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
-                    <img class="mail" src="/images/gmail.png" alt="gmail icon"></a>
+                    <img class="mail" src="../omihachiman/images/gmail.png" alt="gmail icon"></a>
             </div>
         </section>            
         <div class="footer-bar">
