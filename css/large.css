@@ -1,6 +1,23 @@
 @media only screen and (min-width: 64rem) {
+        
+    nav button {
+        display: none;
+        }
 
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    } 
     
+    nav ul li a {
+        border: none;
+        font-size: 20px;
+    }
+    main {
+        clear: left;
+    }
     main section.advertisement {
         grid-template-columns: 1fr 1fr 1fr;
     }
